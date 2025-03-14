@@ -2,43 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    font-family: 'Space Mono', monospace;
+@media (max-width: 1024px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.neo-brutalist {
-  box-shadow: 8px 8px 0px 0px #000000;
-  border: 3px solid #000000;
-}
-
-.neo-brutalist-sm {
-  box-shadow: 4px 4px 0px 0px #000000;
-  border: 2px solid #000000;
-}
-
-.neo-brutalist-hover:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0px 0px #000000;
-}
-
-.gradient-text {
-  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.marquee {
-  animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
   }
-  100% {
-    transform: translateX(-100%);
+}
+@media (max-width: 768px) {
+  h1 { font-size: 2rem !important; }
+  h2 { font-size: 1.75rem !important; }
+  h3 { font-size: 1.25rem !important; }
+  p  { font-size: 0.875rem !important; }
+}
+
+@media (max-width: 640px) {
+  .p-6 { padding: 1rem !important; }
+  .p-8 { padding: 1.5rem !important; }
+  .p-16 { padding: 2rem !important; }
+}
+
+@media (max-width: 768px) {
+  .max-w-sm, .max-w-md, .max-w-lg, .max-w-xl {
+    max-width: 100% !important;
   }
+}
+
+@media (max-width: 640px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.75rem !important;
+  }
+}
+@media (max-width: 640px) {
+  .flex-col-sm {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 640px) {
+  .text-center-sm {
+    text-align: center !important;
+  }
+}
+@media (max-width: 640px) {
+  .hover\:scale-105:hover {
+    transform: none !important;
+  }
+}
+@media (max-width: 640px) {
+  .mb-8 { margin-bottom: 1.5rem !important; }
+  .mb-4 { margin-bottom: 1rem !important; }
+}
+.responsive-card {
+  width: 100%;
+  max-width: 100%;
+}
+@media (max-width: 640px) {
+  .gap-4 {
+    gap: 0.75rem !important;
+  }
+}
+.responsive-card-wrapper {
+  width: 100%;
+  max-width: 100%;
 }
