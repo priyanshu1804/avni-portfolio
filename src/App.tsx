@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Github, Linkedin, Mail, Youtube, Instagram, ExternalLink, Code, Zap, Star, BookOpen, Trophy, Briefcase } from 'lucide-react';
-
+import profileImage from './image.jpeg';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -192,7 +192,7 @@ function App() {
               <div>
                 <div className="neo-brutalist overflow-hidden">
                   <img
-                    src="image.png"
+                    src={profileImage}
                     alt="Profile"
                     className="w-full h-[400px] object-cover hover:scale-100 transition-transform duration-300"
                   />
