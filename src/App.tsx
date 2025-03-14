@@ -194,7 +194,7 @@ function App() {
                   <img
                     src={profileImage}
                     alt="Profile"
-                    className="w-full h-[400px] object-cover hover:scale-100 transition-transform duration-300"
+                    className="w-full h-[300px] sm:h-[400px] object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
