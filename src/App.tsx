@@ -192,7 +192,7 @@ function App() {
               <div>
                 <div className="neo-brutalist overflow-hidden">
                   <img
-                    src="./image.png"
+                    src="image.png"
                     alt="Profile"
                     className="w-full h-[400px] object-cover hover:scale-100 transition-transform duration-300"
                   />
